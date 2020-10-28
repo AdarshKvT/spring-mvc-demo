@@ -10,5 +10,8 @@
 	<hr>
 	<br></br>
 	<b>User name: ${param.userName}</b>
+
+	<br>
+	<br> The message: ${message}
 </body>
 </html>
