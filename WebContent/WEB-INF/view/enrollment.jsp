@@ -4,21 +4,20 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Cookie</title>
+<title>Student enrollment program</title>
 </head>
 <body>
-	<!--  	<hr>
-	<br></br>
-	<b>Student Name: ${param.userName}</b>-->
 	<hr>
-	<br></br>
-	<b>Student Name: ${param.userName}</b>
-	<hr>
-	<br>
-	<br>
-	<b>Enroll No: ${enroll}</b>
+	<img alt="" src="">
 
-	<hr>
+	<br>
+	<br>
+	<b>Student Name: ${studentName}</b>
+
+	<br>
+	<br>
+	<b>Enroll no: ${enrollNo}</b>
+
 	<br>
 	<br>
 	<b>Branch: ${branch}</b>

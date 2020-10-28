@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class GetFortuneController {
@@ -36,6 +37,18 @@ public class GetFortuneController {
 		model.addAttribute("message", result);
 
 		// return the name of the page
+		return "cookie";
+	}
+
+	// method for binding the variable using param annotation
+	@RequestMapping("/processFormVersionThree")
+	public String processFormVersionThree(@RequestParam("nickName") String theStudentName, Model model) {
+
+		// convert the message
+		String result = theStudentName.toUpperCase();
+
+		// add message to the model
+		model.addAttribute("message", result);
 		return "cookie";
 	}
 

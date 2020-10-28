@@ -13,8 +13,14 @@
 
 	<img alt=""
 		src="${pageContext.request.contextPath}/resources/images/helloSpring.jpg">
+
 	<form action="processFormVersionTwo" method="get">
-		<input type="text" name="studentName" placeholder="what's your name">
+		<input type="text" name="studentName"
+			placeholder="what's your student name"> <input type="submit">
+	</form>
+
+	<form action="processFromVersionThree" method="get">
+		<input type="text" name="nickName" placeholder="what's your nick name">
 		<input type="submit">
 	</form>
 </body>
