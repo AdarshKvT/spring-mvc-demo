@@ -6,13 +6,15 @@
 
 <body>
 	<hr>
+	<img alt=""
+		src="${pageContext.request.contextPath}/resources/images/helloSpring.jpg">
+
+	<br>
+	<br>
 	<form action="processForm" method="get">
 		<input type="text" name="userName" placeholder="What's your name" />
 		<input type="submit" />
 	</form>
-
-	<img alt=""
-		src="${pageContext.request.contextPath}/resources/images/helloSpring.jpg">
 
 	<form action="processFormVersionTwo" method="get">
 		<input type="text" name="studentName"
