@@ -21,6 +21,7 @@ public class CustomerController {
 	// resolve issue for validation
 	@InitBinder
 	public void initBinder(WebDataBinder dataBinder) {
+
 		System.out.println("@initBinder method excuting ... ");
 		StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
 		dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
@@ -49,6 +50,7 @@ public class CustomerController {
 			System.out.println("exception: " + e.getMessage());
 		}
 
+		// inspect the bindingResult object
 		if (theBindingResult.hasErrors()) {
 			return "customer-form";
 		} else {

@@ -11,10 +11,19 @@
 
 <body>
 
-	<br>
+	<h1>Results</h1>
+	<hr>
 	<br>
 	<b>The customer with name ${customer.firstName}
 		${customer.lastName} has been confirmed </b>
-
+	<br>
+	<br>
+	<b>Free passes: ${customer.freePasses}</b>
+	<br>
+	<br>
+	<b>Postal code: ${customer.postalCode}</b>
+	<br>
+	<br>
+	<b>Course code: ${customer.courseCode}</b>
 </body>
 </html>
